@@ -49,8 +49,8 @@ CREATE TABLE IF NOT EXISTS public.faq
 TABLESPACE pg_default;
 
 
-insert into categoria values (0, 'Dia-a-dia');
-insert into categoria values (1, 'Configuracoes');
+insert into categoria values (1, 'Dia-a-dia');
+insert into categoria values (3, 'Configuracoes');
 insert into categoria values (2, 'Cuidados');
 insert into artigo values (default, 1, 'celular, iphone, calendário, relógio, lembretes, aplicativos', 'Como utilizar os aplicativos de Calendário, Relógio e Lembretes que já vem no iPhone', 'Como utilizar as ferramentas de organização do iPhone', 'CALENDÁRIO: Quando o aplicativo é aberto, o que aparece na tela é uma visão mensal. Para ver o calendário de forma anual, basta clicar no ano no canto superior esquerdo. A data em vermelho é a selecionada e as datas com a bolinha cinza embaixo são as que já possuem tarefas/compromissos/feriados marcados. Alguns feriados nacionais e datas comemorativas já estão cadastrados no aplicativo...');
 insert into artigo values (default, 3, 'recursos, acessibilidade, android, dispositivos, celular, telefone', 'Aprenda a utilizar os principais recursos de acessibilidade diponíveis em dispositivos Android', 'Como utilizar os recursos de acessibilidade do Android', 'Para acessar a tela de acessibilidade do android, você deve descer a tela de notificações e clicar na engrenagem no canto superior direito. Após fazer isso, você precisa clicar na barra de pesquisa e pesquisar por acessibilidade e selecionar a opção abaixo de um ícone verde com uma pessoa dentro. ZOOM: selecione a opção melhorias de visibilidade. Ao fazer isso, desça a tela até encontrar a opção zoom da tela, onde você consegue aumentar e diminuir o zoom da tela de maneira prática. TAMANHO E ESTILO DA FONTE: na tela de melhorias de visibilidade, desça a tela até encontrar a opção tamanho e estilo da fonte, onde você pode alterar o tamanho das letras, a fonte e escolher se as letras estarão em negrito. AMPLIAÇÃO: na tela de melhorias de visibilidade, desça a tela até encontrar a opção ampliação, onde você pode escolher se deseja ampliar a tela cheia ou usar a janela lupa...');
