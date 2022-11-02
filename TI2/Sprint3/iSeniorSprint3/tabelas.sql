@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS public.usuario
     CONSTRAINT pk_usuario PRIMARY KEY (idusuario),
     CONSTRAINT un_usuario_email UNIQUE (email),
     CONSTRAINT un_usuario_nome UNIQUE (nomeusuario)
-)
+);
 
 
 
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS public.categoria
     idcategoria integer NOT NULL,
     categoria text COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT pk_categoria PRIMARY KEY (idcategoria)
-)
+);
 
 
 CREATE TABLE IF NOT EXISTS public.artigo
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS public.artigo
         REFERENCES public.categoria (idcategoria) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
-)
+);
 
 
 CREATE TABLE IF NOT EXISTS public.faq
@@ -43,11 +43,7 @@ CREATE TABLE IF NOT EXISTS public.faq
     pergunta text COLLATE pg_catalog."default",
     resposta text COLLATE pg_catalog."default",
     CONSTRAINT pk_faq PRIMARY KEY (idfaq)
-)
-
-
-TABLESPACE pg_default;
-
+);
 
 insert into categoria values (1, 'Dia-a-dia');
 insert into categoria values (3, 'Configuracoes');
